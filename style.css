@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* index*/ 
+
+
+.logo {
+    height: 60px;
+    
+}
+
+nav{
+    font-weight: bold;
+    
+}
+
+.carrusel {
+    height: 70px;
+    background-color: #d90368;
+    position: relative;
+}
+
+.carrusel-text {
+    height: 100%;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.chevron {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+/*search */
+
+.filter{
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: 100px;
+}
+
+.categorys {
+    margin-top: 50px;
+    margin-left: 10px;
+    
+}
+
+.look {
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+label {
+    padding: 10px;
+}
+
+/*cards*/
+
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    gap: 20px
+}
+
+
+.img-card {
+    width: 180px ;
+    height:140px ;
+    object-fit: cover;
+    margin:0 auto ;
+    
+    
+}
+
+.card {
+    width: 210px;
+    border: 1px solid black;
+    margin: 25px;
+    padding: 10px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, .2);
+    
+    
+}
+
+.card:hover {
+    color: #d90368;
+    opacity: 78%;
+    
+  }
+
+
+.card-part {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h4 {
+    padding-top: 5px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/* footer */ 
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    background-color: #d90368;
+
+}
+
+.redes {
+    padding: 10px;
+    gap: 10px;
+}
+
+
+
+/* contact */
+
+.form-box {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.form {
+    max-width:100%;
+    padding: 30px;
+    resize: none;
+}
+
+textarea {
+    width: 90%;
+    border: 1px solid rgb(252, 37, 137);
+    
+}
+
+input[type=text] {
+    border: 1px solid rgb(252, 37, 137);
+    border-radius: 4px;
+}
+
+input[type=email] {
+    border: 1px solid rgb(252, 37, 137);
+    border-radius: 4px;
+    
+}
+
+input[type=submit] {
+    padding: 5px;
+    width: 90%;
+    border-radius: 5px; 
+    border: 2px solid rgb(252, 37, 137); 
+    background-color: #d90368;
+    color: aliceblue;
+    
+}
+
+.contact {
+    padding: 3px;
+}
+
+
+/* stats */
+
+table {
+    max-width: 700px;
+    margin: 0 auto;
+    height: 500px;
+    margin-top: 50px;
+}
+
+th{
+    color: #a0416d;  
+}
+
+
+/* card */
+
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    font-family: 'nunito', sans-serif;
+    padding: 0 20px;
+    justify-content: space-evenly;
+    
+}
+
+.card-container {
+    display: flex;
+    gap: 10px;
+    width:600px;
+    height: auto px;
+    margin: 30px;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 4px;
+    border: 3px solid #d90368 ;
+}
+
+
+.description { 
+    text-align: center;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, .2);
+    background-color: white
+    border-radius: 2px;
+    width: 300px;
+    border: 2px solid #d90368;
+    
+}
+
+
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+
+    .carrusel {
+        height: 70px;
+        background-color: #a0416d;
+        position: relative;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        background-color: #a0416d;
+    }
+
+    .filter {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 200px;
+    }
+
+
+    input[type=submit] {
+        padding: 5px;
+        border-radius: 10px;
+        background-color: #d90368 ; 
+        color: aliceblue;
+    }
+
+
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+}
