@@ -172,7 +172,7 @@ var data = {
     ]
   };
 
-
+  
   function drawCard(cardFilter) {
       
     let card = document.getElementById('card-template');
@@ -213,4 +213,17 @@ var data = {
     card.appendChild(fragment)
 }
 
- drawCard (data.events)
+  let cardFilter = []
+
+    for (valor of data.events) {
+    if (valor.date > data.currentDate)
+        cardFilter.push(valor)
+    }
+
+    drawCard (cardFilter)
+
+
+  
+
+
+
